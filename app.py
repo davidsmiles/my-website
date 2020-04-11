@@ -1,10 +1,11 @@
+import os
+
 from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from models.contact import Contact
 
 
 app = Flask(__name__)
-app.secret_key = 'iamdoingwell'
 
 load_dotenv(".env")
 app.config.from_object('default_config')
