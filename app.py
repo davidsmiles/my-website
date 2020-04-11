@@ -1,11 +1,13 @@
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
-from contact import Contact
+from models.contact import Contact
 
 
 app = Flask(__name__)
 app.secret_key = 'iamdoingwell'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://david:a@localhost:5432/david'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+load_dotenv(".env")
+app.config.from_object('default_config')
 
 
 @app.route('/')
