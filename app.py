@@ -8,11 +8,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://david:a@localhost:5432/dav
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
-@app.before_first_request
-def create_all():
-    db.create_all()
-
-
 @app.route('/')
 def index():
     return render_template('index.html')
