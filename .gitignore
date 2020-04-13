@@ -1,4 +1,5 @@
-logs/
+flask/logs
 flask/.env
 nginx
 __pycache__/
+flask/templates/japhlet.html
