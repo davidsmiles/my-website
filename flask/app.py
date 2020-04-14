@@ -8,6 +8,7 @@ app = Flask(__name__)
 
 load_dotenv(".env")
 app.config.from_object('default_config')
+app.config.from_envvar('APPLICATION_SETTINGS')
 
 
 @app.errorhandler(404)
