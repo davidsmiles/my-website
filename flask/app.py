@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 load_dotenv(".env")
 app.config.from_object('default_config')
-app.config.from_envvar('APPLICATION_SETTINGS')
+# app.config.from_envvar('APPLICATION_SETTINGS')
 
 
 @app.errorhandler(404)
@@ -37,4 +37,4 @@ def contact():
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
-    app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0', port=5001)
