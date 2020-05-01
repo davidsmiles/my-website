@@ -1,6 +1,5 @@
 flask/logs
 flask/.env
 flask/mywebsite.sock
-nginx
 __pycache__/
 flask/templates/japhlet.html
