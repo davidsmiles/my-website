@@ -6,6 +6,8 @@ services:
     build: ./flask
     container_name: flask
     restart: always
+    networks:
+      - code
     depends_on:
       - postgres
     volumes:
@@ -17,6 +19,8 @@ services:
     build: ./nginx
     container_name: nginx
     restart: always
+    networks:
+      - code
     ports:
       - "80:80"
 
@@ -24,6 +28,8 @@ services:
     restart: always
     container_name: postgres
     image: postgres:latest
+    networks:
+      - code
     environment:
       - POSTGRES_USER=david
       - POSTGRES_PASSWORD=1234
@@ -32,3 +38,6 @@ services:
       - ./postgres-data/postgres:/var/lib/postgresql/data
     ports:
       - "5432:5432"
+
+networks:
+  code:
