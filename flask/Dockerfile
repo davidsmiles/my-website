@@ -4,4 +4,4 @@ WORKDIR /app
 
 ADD . /app
 
-CMD ["uwsgi", "uwsgi.ini"]
+CMD ["python3", "app.py"]

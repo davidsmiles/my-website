@@ -1,0 +1,1 @@
+web: uwsgi flask/uwsgi.ini

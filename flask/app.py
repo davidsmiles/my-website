@@ -37,4 +37,4 @@ def contact():
 if __name__ == '__main__':
     from db import db
     db.init_app(app)
-    app.run(host='0.0.0.0', port=5001)
+    app.run(host='0.0.0.0', port=8080)

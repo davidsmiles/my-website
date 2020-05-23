@@ -19,6 +19,8 @@ services:
     build: ./nginx
     container_name: nginx
     restart: always
+#    volumes:
+#      - "./nginx/logs:/var/log/nginx"
     networks:
       - code
     ports:
