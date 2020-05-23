@@ -3,3 +3,5 @@ flask/.env
 flask/mywebsite.sock
 __pycache__/
 flask/templates/japhlet.html
+nginx
+postgres-data
