@@ -30,6 +30,7 @@ def contact():
 
         user = Contact(name=name, email=email, message=message)
         user.save_to_db()
+        user.send_me_mail()
 
         return render_template('contact.html', name=name)
 
