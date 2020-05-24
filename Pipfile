@@ -11,6 +11,7 @@ uwsgi = "*"
 flask-sqlalchemy = "*"
 psycopg2-binary = "*"
 python-dotenv = "*"
+requests = "*"
 
 [requires]
 python_version = "3.6"
