@@ -11,6 +11,11 @@ app.config.from_object('default_config')
 # app.config.from_envvar('APPLICATION_SETTINGS')
 
 
+# @app.before_first_request
+# def create_all():
+#     return db.create_all()
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404

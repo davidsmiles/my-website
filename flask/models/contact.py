@@ -22,7 +22,7 @@ class Contact(db.Model):
         subject = f'From {self.name} {self.email}'
         text = self.message
 
-        return Sendmail.send_email(self.email, subject, text)
+        return Sendmail.send_email(subject, text)
 
     def save_to_db(self):
         db.session.add(self)
