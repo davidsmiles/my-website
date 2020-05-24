@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "68fa2f44c49f0bef67c541ef6d8cc4453236ced41d2027079144f1fb1c15d9e1"
+            "sha256": "c902b3cd5f2e45d179c1cf56463731e04ff421cf167a95afb845d17590af0f54"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -156,6 +156,12 @@
             "index": "pypi",
             "version": "==0.13.0"
         },
+        "python-http-client": {
+            "hashes": [
+                "sha256:93d6a26b426e48b04e589c1f103e7c040193e4ccc379ea50cd6e12f94cca7c69"
+            ],
+            "version": "==3.2.7"
+        },
         "requests": {
             "hashes": [
                 "sha256:43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee",
@@ -163,6 +169,14 @@
             ],
             "index": "pypi",
             "version": "==2.23.0"
+        },
+        "sendgrid": {
+            "hashes": [
+                "sha256:38c0853494c7bfbef64f33934c25bf98bb7648cf0e66a0cfb22410927e4ef4c7",
+                "sha256:838e1f7b0f84d56714be6a18ef66fbcf8fba0bda782eee35c47c04d7a16efde8"
+            ],
+            "index": "pypi",
+            "version": "==6.3.1"
         },
         "sqlalchemy": {
             "hashes": [
