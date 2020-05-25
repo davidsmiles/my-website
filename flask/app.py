@@ -1,8 +1,15 @@
+import sentry_sdk
+from sentry_sdk.integrations.flask import FlaskIntegration
+
 from dotenv import load_dotenv
 from flask import Flask, render_template, request
 
 from models.contact import Contact
 
+sentry_sdk.init(
+    dsn="https://198f1994bed4409d9b43632d53d3c197@o397526.ingest.sentry.io/5253062",
+    integrations=[FlaskIntegration()]
+)
 
 app = Flask(__name__)
 
