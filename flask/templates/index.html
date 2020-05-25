@@ -12,17 +12,17 @@
 
     <meta data-react-helmet="true" property="og:title" content="Tech with David" itemprop="name">
     <meta data-react-helmet="true" property="og:type" content="article">
-    <meta data-react-helmet="true" property="og:url" content="https://www.techydavid.com">
-    <meta data-react-helmet="true" property="og:image" content="https://www.techydavid.com/static/assets/images/logo/techydavid-main.jpg" itemprop="image">
-    <meta data-react-helmet="true" property="og:description" content="A Freelance Software Engineer, Microservices-Oriented REST API Developer, a Docker Captain and Server Administrator...">
+    <meta data-react-helmet="true" property="og:url" content="{{url_for('index')}}">
+    <meta data-react-helmet="true" property="og:image" content="{{url_for('static', filename='assets/images/logo/techydavid-main.jpg')}}" itemprop="image">
+    <meta data-react-helmet="true" property="og:description" content="A Freelance Software Engineer, REST API Developer, a Docker Captain and Server Administrator...">
     <meta data-react-helmet="true" property="og:site_name" content="Techy David">
     <meta data-react-helmet="true" property="twitter:card" content="summary_large_image">
 
     <meta data-react-helmet="true" property="twitter:title" content="Tech with David">
-    <meta data-react-helmet="true" property="twitter:description" content="A Freelance Software Engineer, Microservices-oriented REST API Developer, a Docker captain and Server Administrator...">
-    <meta data-react-helmet="true" property="twitter:image" content="https://www.techydavid.com/static/assets/images/logo/techydavid-main.jpg">
-    <meta data-react-helmet="true" property="twitter:creator" content="@iam_davidsmiles">
-    <meta name="twitter:site" content="@iam_davidsmiles">
+    <meta data-react-helmet="true" property="twitter:description" content="A Freelance Software Engineer, REST API Developer, a Docker captain and Server Administrator...">
+    <meta data-react-helmet="true" property="twitter:image" content="{{url_for('static', filename='assets/images/logo/techydavid-main.jpg')}}">
+    <meta data-react-helmet="true" property="twitter:creator" content="@IamDavidsmiles">
+    <meta name="twitter:site" content="@IamDavidsmiles">
 
     <meta data-react-helmet="true" name="description" content="TechyDavid provides services that ranges from building a full-fledged back-end for Software Applications by developing APIs that are easily integrated into any System, Deployment of application on Production Servers and Server Optimization for Performance...">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -141,7 +141,7 @@
                         <div class="header-content-right">
                             <h4 class="sub-title">Hello, I’m</h4>
                             <h1 class="title">David Ugbero</h1>
-                            <p>A Freelance Software Engineer, Microservices-Oriented REST API Developer, a Docker Captain and Server Administrator.</p>
+                            <p>A Freelance Software Engineer, REST API Developer, a Docker Captain and Server Administrator.</p>
                             <a class="main-btn" href="#about">Learn more</a>
                         </div> <!-- header content right -->
                     </div>
@@ -211,7 +211,7 @@
                                         <i class="lni-phone-handset"></i>
                                     </div>
                                     <div class="info-text">
-                                        <p><span>Phone:</span> <a href="tel:+2347038637271">+23470-3863-7271</a></p>
+                                        <p><span>Phone:</span> <a href="tel:+2347038637271">(+234)07038637271</a></p>
                                     </div>
                                 </div> <!-- single info -->
                             </li>
@@ -346,8 +346,8 @@
                             <i class="lni-code-alt"></i>
                         </div>
                         <div class="service-content">
-                            <h4 class="service-title"><a href="#contact">Microservices - From Design to Deployment</a></h4>
-                            <p>I feature in building MicroServices-Architectured Applications, the Inter-Process Communication Mechanism (usually REST APIs) and a corresponding API Gateway using NGINX Plus.</p>
+                            <h4 class="service-title"><a href="#contact">APIs</a></h4>
+                            <p>I feature in building Restful APIs with an architecture of Microservices to ensure excellent production scalability, fault-tolerance and reliability.</p>
                         </div>
                     </div> <!-- single service -->
                 </div>
@@ -541,7 +541,7 @@
                 <div class="col-lg-8">
                     <div class="section-title text-center pb-25">
                         <h2 class="title">My Pricing Plans</h2>
-                        <p>I offer fair and affordable prices on all services rendered. However. all services are stand alone and as such you can contact me to work on a particular feature paramount to your project.</p>
+                        <p>I offer fair and affordable prices on all services rendered. However, all services are stand alone and as such, you can contact me to work on a particular feature on your project.</p>
                     </div> <!-- section title -->
                 </div>
             </div> <!-- row -->
@@ -553,14 +553,14 @@
                         </div>
                         <div class="pricing-body">
                             <div class="pricing-text">
-                                <p>Basic project build from Development into Production.</p>
+                                <p>REST APIs from Development into Production.</p>
                                 <span class="price">$200.00</span>
                             </div>
                             <div class="pricing-list">
                                 <ul>
-                                    <li>Microservice-Oriented Architecture of Project</li>
+                                    <li>Microservice-services Architectural pattern</li>
                                     <li>Complete REST API consumable by Clients</li>
-                                    <li>AWS Or Digital Ocean Hosting</li>
+                                    <li>Cloud Hosting eg. AWS, DigitalOcean, Heroku etc</li>
                                     <li>NGINX Setup as a Reverse Proxy and API Gateway to Application.</li>
                                 </ul>
                             </div>
@@ -582,10 +582,10 @@
                             </div>
                             <div class="pricing-list">
                                 <ul>
-                                    <li>NGINX Plus for API Gateway</li>
                                     <li>Deployments with Docker Containers</li>
                                     <li>Kubernetes Orchestration</li>
                                     <li>Managed Database</li>
+                                    <li>Server Monitoring</li>
                                     <li>etc</li>
                                 </ul>
                             </div>
