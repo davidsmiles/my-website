@@ -28,6 +28,11 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/test')
+def test_index():
+    return "Hello david james"
+
+
 @app.route('/contact', methods=['POST'])
 def contact():
     if request.method == 'POST':
@@ -37,7 +42,7 @@ def contact():
 
         user = Contact(name=name, email=email, message=message)
         user.save_to_db()
-        user.send_me_mail()
+        # user.send_me_mail()
 
         return render_template('contact.html', name=name)
 
